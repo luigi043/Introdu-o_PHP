@@ -1,0 +1,37 @@
+<!-- student_form.htm -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+
+<form action="student.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" name="name" required><br>
+
+    <label for="number">Number:</label>
+    <input type="text" name="number" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" required><br>
+
+    <label for="program">Program:</label>
+    <input type="text" name="program" required><br>
+
+    <h3>Subject List</h3>
+    <label for="subjectList[0][subjectName]">Subject Name:</label>
+    <input type="text" name="subjectList[0][subjectName]" required>
+    <label for="subjectList[0][grade]">Grade:</label>
+    <input type="number" name="subjectList[0][grade]" required><br>
+
+    <!-- Add more subject inputs as needed -->
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
